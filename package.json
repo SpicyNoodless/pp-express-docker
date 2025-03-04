@@ -1,0 +1,19 @@
+{
+  "name": "pp-express-docker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "pnpm -r build",
+    "serve": "pnpm --filter @pp-express-docker/server serve",
+    "dev": "pnpm --filter @pp-express-docker/server dev"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.0",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-shell": "^0.8.0"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "@pp-express-docker/shared",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepare": "pnpm run build",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.5.0",
+  "dependencies": {
+    "@pp-express-docker/lib": "workspace:*"
+  },
+  "devDependencies": {
+    "@types/node": "^22.13.9",
+    "typescript": "^5.8.2"
+  }
+}
