@@ -40,7 +40,6 @@ gulp.task('docker:copy', function (done) {
 gulp.task('docker:node-modules', shell.task(['cd dist && pnpm install --prod --ignore-scripts']));
 gulp.task('docker:build-image', shell.task(['cd dist && docker build -t seval-portal .']));
 gulp.task('docker:build', function (done) {
-    // combine 'docker:copy', 'docker:node-modules' and 'docker:build-image' tasks
     gulp.series('build',
         'docker:copy', 
         'docker:node-modules', 
