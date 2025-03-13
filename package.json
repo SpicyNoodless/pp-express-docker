@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm -r build",
+    "build": "pnpm -r --parallel build",
+    "lint": "pnpm eslint",
     "serve": "pnpm --filter @pp-express-docker/server serve",
     "dev": "pnpm --filter @pp-express-docker/server dev"
   },
@@ -13,7 +14,17 @@
   "license": "ISC",
   "packageManager": "pnpm@10.5.0",
   "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "@typescript-eslint/eslint-plugin": "^8.26.1",
+    "@typescript-eslint/parser": "^8.26.1",
+    "eslint": "^9.22.0",
+    "eslint-config-prettier": "^10.1.1",
+    "eslint-plugin-prettier": "^5.2.3",
+    "eslint-plugin-react": "^7.37.4",
+    "globals": "^15.15.0",
     "gulp": "^5.0.0",
-    "gulp-shell": "^0.8.0"
+    "gulp-shell": "^0.8.0",
+    "prettier": "^3.5.3",
+    "typescript-eslint": "^8.24.1"
   }
 }

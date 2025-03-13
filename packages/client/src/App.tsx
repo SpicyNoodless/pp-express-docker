@@ -1,8 +1,8 @@
-import './App.css'
-import { RedButton }  from "@pp-express-docker/components"
+import "./App.css";
+import { RedButton } from "@pp-express-docker/components";
 
 function App() {
-  return <RedButton />
+  return <RedButton />;
 }
 
-export default App
+export default App;
