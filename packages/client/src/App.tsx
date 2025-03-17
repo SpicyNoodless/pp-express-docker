@@ -1,8 +1,13 @@
 import "./App.css";
-import { RedButton } from "@pp-express-docker/components";
+import { Counter, RedButton } from "@pp-express-docker/components";
 
 function App() {
-  return <RedButton />;
+  return (
+    <>
+      <RedButton />
+      <Counter />
+    </>
+  );
 }
 
 export default App;

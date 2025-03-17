@@ -4,10 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "pnpm -r --parallel build",
-    "lint": "pnpm eslint",
+    "build": "pnpm -r build",
+    "lint": "pnpm -r lint",
     "serve": "pnpm --filter @pp-express-docker/server serve",
-    "dev": "pnpm --filter @pp-express-docker/server dev"
+    "dev": "pnpm --parallel dev"
   },
   "keywords": [],
   "author": "",
@@ -26,5 +26,10 @@
     "gulp-shell": "^0.8.0",
     "prettier": "^3.5.3",
     "typescript-eslint": "^8.24.1"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
   }
 }

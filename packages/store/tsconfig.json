@@ -1,14 +1,17 @@
 {
+  "include": [
+    "src"
+  ],
   "compilerOptions": {
-    "outDir": "./dist",
-    "target": "ESNext",
-    "moduleResolution": "node",
-    "declaration": true,
+    "target": "es2016",
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "skipLibCheck": true,
-    "jsx": "react-jsx"
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": ".",
+    "declaration": true
   }
 }

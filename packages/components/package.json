@@ -8,20 +8,24 @@
   "module": "./dist/index.es.js",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.es.js",
-      "require": "./dist/index.cjs.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.cjs.js"
     }
   },
   "scripts": {
-    "build": "vite build"
+    "build": "vite build",
+    "dev": "vite"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.5.0",
   "dependencies": {
+    "@pp-express-docker/store": "workspace:*",
     "@types/node": "^22.13.9",
+    "mobx": "^6.13.6",
+    "mobx-react-lite": "^4.1.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "typescript": "^5.8.2"
