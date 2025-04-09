@@ -2,7 +2,6 @@
   "name": "@pp-express-docker/components",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "types": "./dist/index.d.ts",
   "main": "./dist/index.js",
   "module": "./dist/index.js",
@@ -15,13 +14,15 @@
   },
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "packageManager": "pnpm@10.5.0",
   "dependencies": {
+    "@pp-express-docker/lib": "workspace:*",
     "@pp-express-docker/store": "workspace:*",
     "@types/node": "^22.13.9",
     "mobx": "^6.13.6",
@@ -31,7 +32,16 @@
     "typescript": "^5.8.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.24.0",
+    "@babel/preset-env": "^7.23.7",
+    "@babel/preset-typescript": "^7.23.3",
+    "@jest/globals": "^29.7.0",
+    "@testing-library/react": "^13.4.0",
+    "@types/jest": "^29.5.11",
     "@types/react": "^19.0.10",
-    "@types/react-dom": "^19.0.4"
+    "@types/react-dom": "^19.0.4",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0"
   }
 }

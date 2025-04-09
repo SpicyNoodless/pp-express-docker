@@ -10,4 +10,7 @@
         "typescriptreact",
         "json",
     ],
+    "editor.indentSize": "tabSize",
+    "editor.tabSize": 2,
+    "editor.detectIndentation": false
 }

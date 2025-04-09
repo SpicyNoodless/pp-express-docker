@@ -10,5 +10,11 @@
     "strict": true,
     "skipLibCheck": true,
     "jsx": "react-jsx"
+  },
+  "typeAcquisition": {
+    "enable": true,
+    "include": [
+      "jest"
+    ]
   }
 }
